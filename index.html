@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  
+  <meta charset="UTF-8">
+  <title>Spotify - Now Playing Visualization</title>
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src='https://cdn.polyfill.io/v2/polyfill.min.js?features=fetch'></script>
+  <!--<script src='https://spotify-cover-view.herokuapp.com/spotify-player.js'></script>-->
+  
+  <script src="js/spotify-player.js"></script>
+  <script src="js/index.js"></script>
+  
+</head>
+
+<body>
+    
+  <div class="menu-container" id="js-menu-container">
+    <form id="js-menu">
+      
+      <div class="labeled-switch">
+        <label class="switch">
+          <input type="checkbox" name="show-bg" id="menu-show-bg" checked>
+          <span class="slider"></span>
+        </label>Background<br/>
+      </div>
+      
+      <div class="labeled-switch">
+        <label class="switch">
+          <input type="checkbox" name="show-name" id="menu-show-name" checked>
+          <span class="slider"></span>
+        </label>Song Name<br/>
+      </div>
+        
+      <div class="labeled-switch">
+        <label class="switch">
+          <input type="checkbox" name="show-artist" id="menu-show-artist" checked>
+          <span class="slider"></span>
+        </label>Artist<br/>
+      </div>
+        
+      <div class="labeled-switch">
+        <label class="switch">
+          <input type="checkbox" name="show-album" id="menu-show-album" checked>
+          <span class="slider"></span>
+        </label>Album<br/>
+      </div>
+        
+      <div class="labeled-switch">
+        <label class="switch">
+          <input type="checkbox" name="show-status" id="menu-show-status" checked>
+          <span class="slider"></span>
+        </label>Status<br/>
+      </div>
+        
+      <div class="labeled-switch">
+        <label class="switch">
+          <input type="checkbox" name="show-bar" id="menu-show-bar" checked>
+          <span class="slider"></span>
+        </label>Progress Bar<br/>
+      </div>
+      
+    </form>
+    
+    <button class="btn btn--logout" id="js-btn-logout">Logout</button>
+  </div>
+
+  <div class="container">
+    
+    <div class="login-container hidden" id="js-login-container">
+      <button class="btn btn--login" id="js-btn-login">Login with Spotify</button>
+    </div>
+    
+    <div class="main-container hidden" id="js-main-container">
+      
+      <div class="main-wrapper">
+        
+        <div class="now-playing__img"></div>
+        
+        <div class="now-playing__side">
+          <div class="now-playing__name"></div>
+          <div class="now-playing__artist"></div>
+          <div class="now-playing__album"></div>
+          <div class="now-playing__status" id="js-btn-togglePlayback"></div>
+          <div class="progress">
+            <div class="progress__bar"></div>
+          </div>
+        </div>
+        
+      </div>
+      
+      <div class="background"></div>
+      
+    </div>
+    
+  </div>
+  
+</body>
+
+</html>

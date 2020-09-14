@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: Helvetica, Arial;
+  font-size: 3vmin;
+}
+
+.hidden {
+  display: none;
+}
+
+/** Buttons **/
+.btn {
+  background-color: transparent;
+  border-radius: 2em;
+  border: 0.2em solid #1ecd97;
+  color: #1ecd97;
+  cursor: pointer;
+  font-size: 3vmin;
+  padding: 0.7em 1.5em;
+  text-transform: uppercase;
+  transition: all 0.25s ease;
+}
+
+.btn:hover {
+  background: #1ecd97;
+  color: #000;
+}
+
+.btn--login {
+  margin: 0 auto;
+}
+
+/** Now Playing **/
+.now-playing__name {
+  opacity: 0.8;
+  font-size: 1.4em;
+  margin-bottom: 0.2em;
+}
+
+.now-playing__artist {
+  opacity: 0.4;
+  font-style: italic;
+  font-weight: 200;
+  margin-bottom: 0.2em;
+}
+
+.now-playing__album {
+  opacity: 0.6;
+  font-weight: 200;
+  margin-bottom: 1.0em;
+}
+
+.now-playing__status {
+  opacity: 0.6;
+  font-size: 0.8em;
+  font-weight: 200;
+  margin-bottom: 0.2em;
+}
+
+.now-playing__img {
+  float: left;
+  margin-right: 10px;
+  text-align: right;
+  width: 45%;
+}
+
+.now-playing__img img {
+  max-width: 80vmin;
+  width: 100%;
+}
+
+.now-playing__side {
+  margin-left: 5%;
+  width: 45%;
+}
+
+/** Progress **/
+.progress {
+  border-radius: 0.1em;
+  opacity: 0.6;
+  border: 0.1em solid #fff;
+  height: 1em;
+}
+
+.progress__bar {
+  background-color: #fff;
+  border: 0.1em solid transparent;
+  height: 0.8em;
+}
+
+/** Background **/
+.background {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: center center;
+  filter: blur(10.0em) opacity(0.4);
+  position: absolute;
+}
+
+.main-wrapper {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  margin: 0 auto;
+  justify-content: center;
+  position: relative;
+  width: 80%;
+  z-index: 1;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+.main-container {
+  flex: 1;
+}
