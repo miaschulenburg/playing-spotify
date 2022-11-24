@@ -3,7 +3,7 @@ class SpotifyPlayer {
     this.options = options;
     this.listeners = {};
     this.accessToken = null;
-    this.exchangeHost = options.exchangeHost || 'https://spotify-player.herokuapp.com';
+    this.exchangeHost = options.exchangeHost || 'https://playing-spotify-server.onrender.com';
     this.obtainingToken = false;
     this.loopInterval = null;
   }

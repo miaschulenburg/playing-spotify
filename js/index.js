@@ -1,4 +1,4 @@
-var spotifyPlayer = new SpotifyPlayer({exchangeHost:"https://spotify-cover-view.herokuapp.com"});
+var spotifyPlayer = new SpotifyPlayer({exchangeHost:"https://playing-spotify-server.onrender.com"});
 var show_bg, show_name, show_artist, show_album, show_status, show_bar;
 
 function updateSettings() {
